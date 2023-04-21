@@ -9,6 +9,9 @@
 Our dataset was taken from Kaggle:
 https://www.kaggle.com/datasets/lakshmanraj/vehicle-insurance-policy
 
+Original dataset    : Vehicle_policies_2020.csv
+Cleaned dataset     : Prepped.csv
+
 ## Data Preparation
 
 
