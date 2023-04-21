@@ -28,9 +28,23 @@ Please view the notebooks in the following order:
 
 For all machine learning model train to test ratio will be 70 : 30.
 
+Metrics used for classifications:                                     
+- Classification accuracy = (TP + TN) / no. of samples                  
+- True positive rate = true positives / all positives                     
+- True negative rate = true negative / all negatives                     
+- False positive rate = false positive / all negatives                   
+- False negative rate = false negative / all positive                     
+
+Metrics used for regression:                                     
+- R^2 = 1 - (MSE / variance)
+- Mesn Squared Error = RSS / no. of samples
+
+** the results shown for the model are all used with the hyperparameters that performs the best
+
 ### Predicting whether a driver will make an insurance claim
 
 Response variable: Claims (Yes / No)
+Predictor variables: "gender", "agecat", "area", "veh_body", "credit_score", "traffic_index", "veh_age", "veh_value", "monthDiff"
 
 **One Hot Encoding**
 
@@ -44,9 +58,12 @@ There is a huge data imbalance of the response variable. To prevent the results 
 
 **Logistic Regression**
 
-Logistic Regression is suitable for predicting binary categorical variables. It uses a logistic function to model the probability of the response variable as a function of the predictor variables.
+Logistic Regression is suitable for predicting binary categorical variables. It uses a logistic function (or sigmoid function), which maps any input value to a probability between 0 and 1. The input values are combined linearly with weights, and then the logistic function is applied to the result. During training, the logistic regression model adjusts its weights to maximize the likelihood of the correct class label given the input data. This is done using a cost function, such as the cross-entropy loss function, and an optimization algorithm, such as gradient descent.
 
 Both train and test set yields a similar result that is fairly good.
+
+Hyperparameters:                                                       
+- max_iter = 400                                                         
 
 *Train set*                                                            
 Classification accuracy           : 0.735
@@ -78,7 +95,11 @@ saga            : 0.736
 
 **Random Forest Classifier**
 
-Random Forest generates multiple decision tree to make predictions about a target variable, and is suitable for complex datasets.
+Random Forest generates multiple decision tree to make predictions about a target variable, and is suitable for complex datasets. Each tree is exposed to a different number of features and a different sample of the original dataset, and as such, every tree can be different. Each tree then makes a prediction, and finally taking the most popular result.
+
+Hyperparameters:                                                                 
+- n_estimators: 100                                                                
+- max_depth: 10                                                                   
 
 *Train set*                                                                          
 Classification accuracy           : 0.773
@@ -122,6 +143,10 @@ Similarly, we performed Dummy Encoding to convert categorical variabels to numer
 
 **Linear Regression**
 
+Linear regression shows the linear relationship between the predictor and response variable. It uses a straight line y = b0 + b1 * x. The goal of linear regression is to get the best values for b0 and b1 to find the best fit line.
+
+Predictor variables: "agecat", "area", "veh_body", "credit_score", "traffic_index", "monthDiff", "numclaims"
+
 *Train set*                                                                              
 Explained variance    : 0.970
 Mean Squared Error    : 934884.176
@@ -134,7 +159,9 @@ Despite performing multiple times by varying the predictor variables, the R^2 an
 
 **Ridge Regression**
 
-Ridge Regression is suitable for variables with multicollinearity.
+Ridge Regression is suitable for variables with multicollinearity. It is a type of linear regression and that ads a penalty term to the cost function that is minimised during training. The penalty term is based on the sum of the squared values of the regression coefficients, and it is multiplied by a hyperparameter called lamda. This hyperparameter controls the strength of the penalty and helps to balance the tradeoff between model complexity and model fit. In other words, ridge regression adds a little bit of bias to the model to reduce the variance that comes from having too many predictors. This can result in better performance on new, unseen data.
+
+Predictor variables: "agecat", "area", "veh_body", "credit_score", "traffic_index", "veh_age", "monthDiff", "numclaims"
 
 *Train set*                                                                  
 Explained variance    : 0.822
@@ -153,5 +180,14 @@ Problem 1: A fairly good model was built using classification to predict if a dr
 Problem 2: A model was built to predict the claim cost, but the model is not accurate.
 
 In real life, an accident involves many factors, such as speed, and traffic density. In addition, claim cost can also vary from mechanic to mechanic. Furthermore, claim cost is also not proportional to the number of claims. All of these might be reasons why the regression was not well performed.
+
+Limitations:                                                         
+- Inaccurate prediction of claim cost                                         
+
+Possible improvements:                                                       
+- Due to the extremely large dataset, it might me better to split the dataset into multiple ones, perform the same machine learning, and take the average.
+- Before predicting the claim cost, predict the number of claims that will be made first
+
+
 
 
