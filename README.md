@@ -40,7 +40,7 @@ Logistic Regression is suitable for predicting binary categorical variables. It 
 
 Both train and test set yields a similar result that is fairly good.
 
-*Train set*
+Train set
 Classification accuracy           : 0.735
 
 True Positive Rate                : 0.736
