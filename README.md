@@ -40,8 +40,7 @@ Logistic Regression is suitable for predicting binary categorical variables. It 
 
 Both train and test set yields a similar result that is fairly good.
 
-*Train set*
-
+*Train set*                                                            
 Classification accuracy           : 0.735
 
 True Positive Rate                : 0.736
@@ -50,8 +49,7 @@ True Negative Rate                : 0.734
 False Positive Rate               : 0.266
 False Negative Rate               : 0.264
 
-*Test set*
-
+*Test set*                                                                  
 Classification accuracy           : 0.737
 
 True Positive Rate                : 0.742
@@ -65,17 +63,16 @@ The almost identical results of train and test suggests the fitting of the model
 Grid Search CV was performed to determine the best solver. Solver is the algorith used by the model for optimisation. However, all solver yields the same score, as shown below:
 
 liblinear       : 0.736                                                                             
-newton_cg       : 0.736
-lbfgs           : 0.736
-sag             : 0.736
-saga            : 0.736
+newton_cg       : 0.736                                                                     
+lbfgs           : 0.736                                                                       
+sag             : 0.736                                                                       
+saga            : 0.736                                                                      
 
 **Random Forest Classifier**
 
 Random Forest generates multiple decision tree to make predictions about a target variable, and is suitable for complex datasets.
 
-*Train set*
-
+*Train set*                                                                          
 Classification accuracy           : 0.773
 
 True Positive Rate                : 0.784
@@ -84,8 +81,7 @@ True Negative Rate                : 0.761
 False Positive Rate               : 0.239
 False Negative Rate               : 0.215
 
-*Test set*
-
+*Test set*                                                                                
 Classification accuracy           : 0.763
 
 True Positive Rate                : 0.775
@@ -118,13 +114,11 @@ Similarly, we performed Dummy Encoding to convert categorical variabels to numer
 
 **Linear Regression**
 
-*Train set*
-
+*Train set*                                                                              
 Explained variance    : 0.970
 Mean Squared Error    : 934884.176
 
-*Test set*
-
+*Test set*                                                                                 
 Explained variance    : -0.522
 Mean Squared Error    : 49792553.483
 
@@ -134,13 +128,11 @@ Despite performing multiple times by varying the predictor variables, the R^2 an
 
 Ridge Regression is suitable for variables with multicollinearity.
 
-*Train set*
-
+*Train set*                                                                  
 Explained variance    : 0.822
 Mean Squared Error    : 5753073.318
 
-*Test set*
-
+*Test set*                                                              
 Explained variance    : 0.302
 Mean Squared Error    : 21572444.483
 
