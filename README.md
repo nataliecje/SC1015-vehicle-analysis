@@ -73,6 +73,7 @@ saga            : 0.736
 Random Forest generates multiple decision tree to make predictions about a target variable, and is suitable for complex datasets.
 
 *Train set*
+
 Classification accuracy           : 0.773
 
 True Positive Rate                : 0.784
@@ -82,6 +83,7 @@ False Positive Rate               : 0.239
 False Negative Rate               : 0.215
 
 *Test set*
+
 Classification accuracy           : 0.763
 
 True Positive Rate                : 0.775
