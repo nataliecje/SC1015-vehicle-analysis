@@ -12,6 +12,11 @@ https://www.kaggle.com/datasets/lakshmanraj/vehicle-insurance-policy
 Original dataset    : Vehicle_policies_2020.csv                                       
 Cleaned dataset     : Prepped.csv
 
+Please view the notebooks in the following order:                                    
+1) Data Preparation                                                                  
+2) Exploratory Data Analysis                                                             
+3) Machine Learning                                                                                  
+
 ## Data Preparation
 
 
