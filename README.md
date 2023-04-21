@@ -189,5 +189,11 @@ Possible improvements:
 - Before predicting the claim cost, predict the number of claims that will be made first
 
 
+## Work distribution
 
+- Data Preparation            : Jie En                                                          
+- EDA                         : Benjamin                                                                
+- Machine Learning            : Jun Yu                                                                  
+- Video                       : Everyone                                                                         
+- README                      : Everyone                                                                  
 
