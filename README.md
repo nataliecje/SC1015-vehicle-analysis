@@ -110,11 +110,11 @@ The almost identical results of train and test suggests the fitting of the model
 
 Grid Search CV was performed to determine the best solver. Solver is the algorith used by the model for optimisation. However, all solver yields the same score, as shown below:
 
-liblinear       : 0.736                                                                             
-newton_cg       : 0.736                                                                     
-lbfgs           : 0.736                                                                       
-sag             : 0.736                                                                       
-saga            : 0.736                                                                      
+> liblinear       : 0.736                                                                             
+> newton_cg       : 0.736                                                                     
+> lbfgs           : 0.736                                                                       
+> sag             : 0.736                                                                       
+> saga            : 0.736                                                                      
 
 **Random Forest Classifier**
 
@@ -124,23 +124,19 @@ Hyperparameters:
 - n_estimators: 100                                                                
 - max_depth: 10                                                                   
 
-*Train set*                                                                          
-Classification accuracy           : 0.773
+> *Train set*                                                                          
+>> Classification accuracy           : 0.773                                      
+>> True Positive Rate                : 0.784                                      
+>> True Negative Rate                : 0.761                                      
+>> False Positive Rate               : 0.239                                      
+>> False Negative Rate               : 0.215                                      
 
-True Positive Rate                : 0.784
-True Negative Rate                : 0.761
-
-False Positive Rate               : 0.239
-False Negative Rate               : 0.215
-
-*Test set*                                                                                
-Classification accuracy           : 0.763
-
-True Positive Rate                : 0.775
-True Negative Rate                : 0.752
-
-False Positive Rate               : 0.248
-False Negative Rate               : 0.225
+> *Test set*                                                                                
+>> Classification accuracy           : 0.763                                      
+>> True Positive Rate                : 0.775                                      
+>> True Negative Rate                : 0.752                                      
+>> False Positive Rate               : 0.248                                      
+>> False Negative Rate               : 0.225                                      
 
 This model performs slightly better than the previous.
 
@@ -170,13 +166,13 @@ Linear regression shows the linear relationship between the predictor and respon
 
 Predictor variables: "agecat", "area", "veh_body", "credit_score", "traffic_index", "monthDiff", "numclaims"
 
-*Train set*                                                                              
-Explained variance    : 0.970
-Mean Squared Error    : 934884.176
+> *Train set*                                                                              
+>> Explained variance    : 0.970                                      
+>> Mean Squared Error    : 934884.176                                      
 
-*Test set*                                                                                 
-Explained variance    : -0.522
-Mean Squared Error    : 49792553.483
+> *Test set*                                                                                 
+>> Explained variance    : -0.522                                      
+>> Mean Squared Error    : 49792553.483                                      
 
 Despite performing multiple times by varying the predictor variables, the R^2 and mean squared error are all not ideal. We have constant underfitting issues, which may suggest that the predictor and response variable relation are not linear.
 
@@ -186,13 +182,13 @@ Ridge Regression is suitable for variables with multicollinearity. It is a type 
 
 Predictor variables: "agecat", "area", "veh_body", "credit_score", "traffic_index", "veh_age", "monthDiff", "numclaims"
 
-*Train set*                                                                  
-Explained variance    : 0.822
-Mean Squared Error    : 5753073.318
+> *Train set*                                                                  
+>> Explained variance    : 0.822                                      
+>> Mean Squared Error    : 5753073.318                                      
 
-*Test set*                                                              
-Explained variance    : 0.302
-Mean Squared Error    : 21572444.483
+> *Test set*                                                              
+>> Explained variance    : 0.302                                      
+>> Mean Squared Error    : 21572444.483                                      
 
 There is an overfitting issue here despite multiple tries of reducing and varying the predictor variables.
 
