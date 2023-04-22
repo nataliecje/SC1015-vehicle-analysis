@@ -70,12 +70,12 @@ Metrics used for regression:
 
 ### Predicting whether a driver will make an insurance claim
 
-Response variable: `claims` (Yes / No)
-Predictor variables: "gender", "agecat", "area", "veh_body", "credit_score", "traffic_index", "veh_age", "veh_value", "monthDiff"
+Response variable: `claims` (Yes / No)                                      
+Predictor variables: `gender`, `agecat,` `area`, `veh_body`, `credit_score`, `traffic_index`, `veh_age`, `veh_value`, `monthDiff`
 
 **One Hot Encoding**
 
-One Hot Encoding was first performed to convert categorical variabels to numerical.
+`OneHotEncoding` was first performed to convert categorical variabels to numerical.
 
 It creates a binary representation of the categories and assigns "1" to the category, and "0" for others.
 
@@ -85,7 +85,7 @@ There is a huge data imbalance of the response variable. To prevent the results 
 
 **Logistic Regression**
 
-Logistic Regression is suitable for predicting binary categorical variables. It uses a logistic function (or sigmoid function), which maps any input value to a probability between 0 and 1. The input values are combined linearly with weights, and then the logistic function is applied to the result. During training, the logistic regression model adjusts its weights to maximize the likelihood of the correct class label given the input data. This is done using a cost function, such as the cross-entropy loss function, and an optimization algorithm, such as gradient descent.
+`LogisticRegression` is suitable for predicting binary categorical variables. It uses a logistic function (or sigmoid function), which maps any input value to a probability between 0 and 1. The input values are combined linearly with weights, and then the logistic function is applied to the result. During training, the logistic regression model adjusts its weights to maximize the likelihood of the correct class label given the input data. This is done using a cost function, such as the cross-entropy loss function, and an optimization algorithm, such as gradient descent.
 
 Both train and test set yields a similar result that is fairly good.
 
@@ -108,7 +108,7 @@ Hyperparameters:
 
 The almost identical results of train and test suggests the fitting of the model is good.
 
-Grid Search CV was performed to determine the best solver. Solver is the algorith used by the model for optimisation. However, all solver yields the same score, as shown below:
+`GridSearchCV` was performed to determine the best solver. Solver is the algorith used by the model for optimisation. However, all solver yields the same score, as shown below:
 
 > liblinear       : 0.736                                                                             
 > newton_cg       : 0.736                                                                     
@@ -118,7 +118,7 @@ Grid Search CV was performed to determine the best solver. Solver is the algorit
 
 **Random Forest Classifier**
 
-Random Forest generates multiple decision tree to make predictions about a target variable, and is suitable for complex datasets. Each tree is exposed to a different number of features and a different sample of the original dataset, and as such, every tree can be different. Each tree then makes a prediction, and finally taking the most popular result.
+`RandomForest` generates multiple decision tree to make predictions about a target variable, and is suitable for complex datasets. Each tree is exposed to a different number of features and a different sample of the original dataset, and as such, every tree can be different. Each tree then makes a prediction, and finally taking the most popular result.
 
 Hyperparameters:                                                                 
 - n_estimators: 100                                                                
@@ -140,7 +140,7 @@ Hyperparameters:
 
 This model performs slightly better than the previous.
 
-Grid Search CV was also used to determine the best parameters.
+`GridSearchCV` was also used to determine the best parameters.
 
 Max depth, which indicated the maximum depth of the tree, was determined to be best at 10.
 N estimators, the number of trees in the forest, was determined to be 600.
@@ -150,7 +150,7 @@ However, after tuning the parameters, the results are almost the same.
 
 ### Predicting the claim costs of drivers who made claims
 
-Response variable: Claim cost (numeric)
+Response variable: `claimcst0` (numeric)
 
 **Extract data**
 
@@ -158,13 +158,13 @@ We first filter out the data that have more than or equals to 1 claim.
 
 **Dummy Encoding**
 
-Similarly, we performed Dummy Encoding to convert categorical variabels to numerical.
+Similarly, we performed `DummyEncoding` to convert categorical variabels to numerical.
 
 **Linear Regression**
 
-Linear regression shows the linear relationship between the predictor and response variable. It uses a straight line y = b0 + b1 * x. The goal of linear regression is to get the best values for b0 and b1 to find the best fit line.
+`LinearRegression` shows the linear relationship between the predictor and response variable. It uses a straight line y = b0 + b1 * x. The goal of linear regression is to get the best values for b0 and b1 to find the best fit line.
 
-Predictor variables: "agecat", "area", "veh_body", "credit_score", "traffic_index", "monthDiff", "numclaims"
+Predictor variables: `agecat`, `area`, `veh_body`, `credit_score`, `traffic_index`, `monthDiff`, `numclaims`
 
 > *Train set*                                                                              
 >> Explained variance    : 0.970                                      
