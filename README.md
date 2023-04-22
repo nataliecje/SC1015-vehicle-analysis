@@ -22,6 +22,33 @@ Please view the notebooks in the following order:
 
 ## Exploratory Data Analysis
 
+In this section, we will be exploring 3 predictor variables `gender`, `age` and `traffic` that are related to the 2 response variables `claims` and `cost` to find patterns or underlying relationships between the predictor and response variables. This is going to help us answer the initial question we posed in the subsequent sections. 
+<br/> 
+<br/>
+Lastly, we will also be taking a look at the relationship between `numclaims` and `cost`.
+
+<br/>
+
+## Table of Contents 
+>1. Classifying dataset into numerical and categorical <br>
+>2. Exploring Predictor Variables <br>
+>>2.1 `gender` (gender of individual) <br>
+>>2.2 `age` (age category of individual) <br>
+>>2.3 `traffic` (traffic index) <br>
+>3. Exploring the Response Variables
+>>3.1 `claims` (boolean variable indicating presence of an insurance claim) <br>
+>>3.2 `cost` (cost of insurance claim when `claims` is present) <br>
+>4. Exploring Relationship between predictor variables and `claims`
+>>4.1 `gender` against `claims` <br>
+>>4.2 `age` against `claims` <br>
+>>4.3 `traffic` against `claims` <br>
+>5. Exploring Relationship between predictor variables and `cost`
+>>5.1 `gender` against `cost` <br>
+>>5.2 `age` against `cost` <br>
+>>5.3 `traffic` against `cost` <br>
+>6. Exploring Relationship between `numclaims` and `cost`
+
+<br/>
 
 
 ## Machine Learning
