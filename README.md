@@ -95,10 +95,10 @@ Hyperparameters:
 > *Train set*                                                            
 >> Classification accuracy           : 0.735
 
->> True Positive Rate                : 0.736
+>> True Positive Rate                : 0.736                                                     
 >> True Negative Rate                : 0.734
 
->> False Positive Rate               : 0.266
+>> False Positive Rate               : 0.266                                                         
 >> False Negative Rate               : 0.264
 
 *Test set*                                                                  
