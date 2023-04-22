@@ -70,7 +70,7 @@ Metrics used for regression:
 
 ### Predicting whether a driver will make an insurance claim
 
-Response variable: Claims (Yes / No)
+Response variable: `claims` (Yes / No)
 Predictor variables: "gender", "agecat", "area", "veh_body", "credit_score", "traffic_index", "veh_age", "veh_value", "monthDiff"
 
 **One Hot Encoding**
