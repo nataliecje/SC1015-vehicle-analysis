@@ -39,6 +39,7 @@ monthDiff: derived from month & year; represents the difference in months from p
 claims: derived from numclaims; indicated by “Yes” or “No”, to specify if a customer has made claims or not 
 
 **3. Removal of Outliers**
+Outliers can have a big impact on your statistical analyses and skew the results of any hypothesis test if they are inaccurate. These extreme values can impact your statistical power as well, making it hard to detect a true effect if there is one.
 
 **4. Re-scaling of Variables**
 Variables re-scaled: credit_score, traffic_index, veh_age
