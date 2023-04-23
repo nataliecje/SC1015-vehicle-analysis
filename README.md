@@ -45,7 +45,8 @@ claims: derived from numclaims; indicated by “Yes” or “No”, to specify i
 **3. Removal of Outliers**
 
 Outliers can have a big impact on your statistical analyses and skew the results of any hypothesis test if they are inaccurate. These extreme values can impact your statistical power as well, making it hard to detect a true effect if there is one.
-
+<br/> 
+<br/> 
 
 **4. Re-scaling of Variables**
 
