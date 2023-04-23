@@ -87,14 +87,14 @@ As we have variables with data points far from each other, scaling is a techniqu
 
 ## Exploratory Data Analysis
 
-In this section, we have decided to narrow our focus down to **<ins>3 predictor variables</ins>** `gender`, `age` and `traffic` and **<u>2 response variables**<u/> `claims` and `cost`. <br/>
+In this section, we have decided to narrow our focus down to **<ins>3 predictor variables</ins>** `gender`, `age` and `traffic` and **<ins>2 response variables**</ins> `claims` and `cost`. <br/>
 
 We have decided to go ahead with `gender`, `age` and `traffic index` as our predictor variables as these are variables that would likely influence the our 2 response variables. On the contrary, the other variables in the dataset that we have decided not to explore are already similar to our chosen variables. <br/> 
  
 We will be taking a look at each predictor variable and response variable and subsequently **<ins>explore the relationships between each possible pair of predictor and response variables.</ins>** <br/>
 
 Lastly, we will also be taking a look at the relationship between `numclaims` and `cost`. <br/>
-
+<br/>
  
 
 
