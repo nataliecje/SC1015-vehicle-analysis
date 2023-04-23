@@ -42,11 +42,11 @@ These variables are not found useful in helping us to reach a solution for our p
 Variables derived: `month`, `year`, `monthDiff`, `claims`
 <br/> 
 
-month & year: derived from pol_eff_date; used for calculation of monthDiff
+`month` & `year`: derived from pol_eff_date; used for calculation of `monthDiff`
 <br/> 
-monthDiff: derived from month & year; represents the difference in months from pol_eff_date to current (1 April 2023) 
+`monthDiff`: derived from month & year; represents the difference in months from `pol_eff_date` to current (1 April 2023) 
 <br/> 
-claims: derived from numclaims; indicated by “Yes” or “No”, to specify if a customer has made claims or not 
+`claims`: derived from numclaims; indicated by “Yes” or “No”, to specify if a customer has made claims or not 
 <br/> 
 <br/> 
 
