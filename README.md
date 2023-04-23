@@ -31,7 +31,8 @@ Please view the notebooks in the following order:
 Variables dropped: pol_number, date_of_birth, claim_office, annual_premium
 
 These variables are not found useful in helping us to reach a solution for our problem statements. 
-
+<br/> 
+<br/> 
 
 **2. Derivation of New Variable**
 
@@ -40,7 +41,8 @@ Variables derived: month, year, monthDiff, claims
 month & year: derived from pol_eff_date; used for calculation of monthDiff
 monthDiff: derived from month & year; represents the difference in months from pol_eff_date to current (1 April 2023) 
 claims: derived from numclaims; indicated by “Yes” or “No”, to specify if a customer has made claims or not 
-
+<br/> 
+<br/> 
 
 **3. Removal of Outliers**
 
@@ -59,7 +61,8 @@ Data scaling is the process of transforming the values of the features of a data
 ##### veh_age ranges from 1 to 4;
 
 As we have variables with data points far from each other, scaling is a technique to make them closer to each other or in simpler words, we can say that the scaling is used for making data points generalized so that the distance between them will be lower. Therefore, we have made a linear transformation of the data of some variables, namely credit_socre, traffic index, and veh_age, to map the minimum and maximum value to 1 and 100 respectively. This adjusts the numbers to make it easy to compare the values that are out of each other's scope, ultimately increasing the accuracy of the models.
-
+<br/> 
+<br/> 
 
 ## Exploratory Data Analysis
 
