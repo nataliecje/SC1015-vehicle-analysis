@@ -19,6 +19,29 @@ Please view the notebooks in the following order:
 
 ## Data Preparation
 
+## Table of Contents
+>1. Dropping of Unused Variables
+>2. Derivation of New Variables
+>2. Dealing with Empty Cells
+>3. Removal of Outliers
+>4. Re-scaling of Variables
+
+**1. Dropping of Unused Variables**
+Variables dropped: pol_number, date_of_birth, claim_office, annual_premium
+
+These variables are not found useful in helping us to reach a solution for our problem statements. 
+
+**2. Derivation of New Variable**
+Variables derived: month, year, monthDiff, claims
+
+month & year: derived from pol_eff_date; used for calculation of monthDiff
+monthDiff: derived from month & year; represents the difference in months from pol_eff_date to current (1 April 2023) 
+claims: derived from numclaims; indicated by “Yes” or “No”, to specify if a customer has made claims or not 
+
+**3. Removal of Outliers**
+
+**4. Re-scaling of Variables**
+Variables re-scaled: credit_score, traffic_index, veh_age
 
 ## Exploratory Data Analysis
 
