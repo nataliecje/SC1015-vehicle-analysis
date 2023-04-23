@@ -72,15 +72,16 @@ As we have variables with data points far from each other, scaling is a techniqu
 <br/> 
 <br/> 
 
+
 ## Exploratory Data Analysis
 
-In this section, we will be exploring 3 predictor variables `gender`, `age` and `traffic` that are related to the 2 response variables `claims` and `cost` to find patterns or underlying relationships between the predictor and response variables. This is going to help us answer the initial question we posed in the subsequent sections. 
+In this section, we have decided to narrow our focus down to **<u>3 predictor variables</u>** `gender`, `age` and `traffic` and **<u>2 response variables**<u/> `claims` and `cost`. We have decided to go ahead with `gender`, `age` and `traffic index` as our predictor variables as these are variables that would likely influence the our 2 response variables. On the contrary, the other variables in the dataset that we have decided not to explore are already similar to our chosen variables. We will be taking a look at each predictor variable and response variable and subsequently **<u>explore the relationships between each possible pair of predictor and response variables.</u>**
+
 <br/> 
 <br/>
 Lastly, we will also be taking a look at the relationship between `numclaims` and `cost`.
 
 <br/>
-
 ## Table of Contents 
 >1. Classifying dataset into numerical and categorical <br>
 >2. Exploring Predictor Variables <br>
@@ -99,8 +100,27 @@ Lastly, we will also be taking a look at the relationship between `numclaims` an
 >>5.2 `age` against `cost` <br>
 >>5.3 `traffic` against `cost` <br>
 >6. Exploring Relationship between `numclaims` and `cost`
-
 <br/>
+
+
+<br>
+**1. Classifying the dataset into numerical and categorical**
+We have 3 categorical variables:
+1. `gender` (male and female)
+2. `age` (age category)
+3. `claims` (presence or absence of an insurance claim)
+
+We have 2 numerical variables:
+1. `traffic` (traffic index / traffic condition on the road)
+2. `cost` (cost of insurance claim)
+<br/>
+
+
+<br>
+**2. Exploring Predictor Variables**
+2.1 gender is a categorical 
+
+
 
 
 ## Machine Learning
