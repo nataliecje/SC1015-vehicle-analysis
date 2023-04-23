@@ -156,8 +156,6 @@ We have 2 numerical variables: <br/>
 ## 3. Exploring `Response Variables` <br/>
 1. `claims` is a categorical boolean variable with **Yes** and **No** values indicating the presence or absence of a claim <br/>
 2. `cost` is a numerical variable representing the cost of an insurance claim <br/>
-
-Now, we will be taking a look at the relationships between each predictor variable and response variable to find better insights. <br/>
 <br/>
 
 
@@ -176,7 +174,7 @@ Now, we will be taking a look at the relationships between each predictor variab
 
 
 ## 6. Exploring Relationship between `numclaims` and `cost` <br/>
-Last but not least, plotting `cost` against `numclaims` (number of claims made) tells us that claim costs and number of claims are positively correlated. <br/>
+1. Plotting `cost` against `numclaims` (number of claims made) tells us that claim costs and number of claims are positively correlated. <br/>
 <br/>
 <br/>
 <br/>
