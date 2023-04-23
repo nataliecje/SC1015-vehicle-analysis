@@ -173,7 +173,9 @@ Now, we will be taking a look at the relationships between each predictor variab
 
 ## 6. Exploring Relationship between `numclaims` and `cost` <br/>
 Last but not least, plotting `cost` against `numclaims` (number of claims made) tells us that claim costs and number of claims are positively correlated. <br/>
- 
+<br/>
+<br/>
+<br/>
   
 
   
