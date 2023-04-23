@@ -89,7 +89,6 @@ As we have variables with data points far from each other, scaling is a techniqu
 
 In this section, we have decided to narrow our focus down to **<ins>3 predictor variables</ins>** `gender`, `age` and `traffic` and **<u>2 response variables**<u/> `claims` and `cost`. We have decided to go ahead with `gender`, `age` and `traffic index` as our predictor variables as these are variables that would likely influence the our 2 response variables. On the contrary, the other variables in the dataset that we have decided not to explore are already similar to our chosen variables. We will be taking a look at each predictor variable and response variable and subsequently **<ins>explore the relationships between each possible pair of predictor and response variables.</ins>**
 
-<br/> 
 Lastly, we will also be taking a look at the relationship between `numclaims` and `cost`.
 
 <br/>
@@ -113,8 +112,11 @@ Lastly, we will also be taking a look at the relationship between `numclaims` an
 >6. Exploring Relationship between `numclaims` and `cost`
 <br/>
 
+In order to analyse the variables we have picked, we first needed to manipulate the dataset. <br>
+Firstly, we extracted each predictor variable from its respective column in the dataset into a dataframe. <br> 
+Secondly, some rows in the ‘claim cost’ column had zero values which indicated the absence of a claim. We are are only interested in analysing the cost of claims when claims were present, so we manipulated the data by extracting out all the rows in the dataset that had a non-zero value into a new dataset.
 
-<br>
+
 **1. Classifying the dataset into numerical and categorical**
 We have 3 categorical variables:
 1. `gender` (male and female)
@@ -124,16 +126,44 @@ We have 3 categorical variables:
 We have 2 numerical variables:
 1. `traffic` (traffic index / traffic condition on the road)
 2. `cost` (cost of insurance claim)
-<br/>
+
 
 
 <br>
 **2. Exploring Predictor Variables**
-2.1 gender is a categorical 
+2.1 `gender` is a categorical variable with 2 values, male and female
+2.2 `age` is a categorical variable with 6 different values ranging from 1 to 6
+2.3 `traffic` is a numerical variable ranging from 1 to 100 which represents the traffic conditions on the road. A higher traffic value represents higher traffic activity on the road
 
+**3. Exploring Response Variables**
+3.1 `claims` is a categorical boolean variable with **Yes** and **No** values indicating the presence or absence of a claim
+3.2 `cost` is a numerical variable representing the cost of an insurance claim
+ 
+Now, we will be taking a look at the relationships between each predictor variable and response variable to find better insights. 
 
+**4. Exploring Relationship between `predictor variables` and `claims`**
+4.1 Plotting `claims` against `gender` allows us to see that females are more likely not to make claims while males are more likely to make claims 
+4.2 No insights were gathered here
+4.3 Plotting `claims` against `traffic` also allows us to see that claims are more likely to be made in areas with a higher traffic index.
 
+**5. Exploring Relationship between predictor variables and `cost`**
+5.1 Plotting `gender` against `cost` tells us that the median and quartile claim costs for females are higher than that for males
+5.2 Plotting `cost` against `age` tells us that the youngest and oldest drivers’ have higher claim costs and a larger spread of claim costs than other drivers
+5.3 No new insights were gathered here
 
+**6. Exploring Relationship between `numclaims` and `cost` **
+Last but not least, plotting `cost` against `numclaims` (number of claims made) tells us that claim costs and number of claims are positively correlated.
+ 
+  
+<br>
+<br>
+<br>
+<br>
+  
+  
+  
+  
+  
 ## Machine Learning
 
 For all machine learning model train to test ratio will be 70 : 30.
