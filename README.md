@@ -43,7 +43,9 @@ Variables derived: month, year, monthDiff, claims
 <br/> 
 
 month & year: derived from pol_eff_date; used for calculation of monthDiff
+<br/> 
 monthDiff: derived from month & year; represents the difference in months from pol_eff_date to current (1 April 2023) 
+<br/> 
 claims: derived from numclaims; indicated by “Yes” or “No”, to specify if a customer has made claims or not 
 <br/> 
 <br/> 
@@ -60,9 +62,11 @@ Variables re-scaled: credit_score, traffic_index, veh_age
 
 Data scaling is the process of transforming the values of the features of a dataset till they are within a specific range.
 
-##### credit_score ranges from 301 to 850;
-##### traffic_index ranges from 0 to 207;
-##### veh_age ranges from 1 to 4;
+credit_score ranges from 301 to 850;
+<br/> 
+traffic_index ranges from 0 to 207;
+<br/> 
+veh_age ranges from 1 to 4;
 
 As we have variables with data points far from each other, scaling is a technique to make them closer to each other or in simpler words, we can say that the scaling is used for making data points generalized so that the distance between them will be lower. Therefore, we have made a linear transformation of the data of some variables, namely credit_socre, traffic index, and veh_age, to map the minimum and maximum value to 1 and 100 respectively. This adjusts the numbers to make it easy to compare the values that are out of each other's scope, ultimately increasing the accuracy of the models.
 <br/> 
