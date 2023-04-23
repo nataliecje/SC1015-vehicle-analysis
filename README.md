@@ -342,6 +342,12 @@ Possible improvements:
 - Before predicting the claim cost, predict the number of claims that will be made first
 
 
+## References
+- Logistic Regression: https://towardsdatascience.com/logistic-regression-detailed-overview-46c4da4303bc
+- Random Forest: https://www.datacamp.com/tutorial/random-forests-classifier-python
+- Ridge Regression: https://www.analyticsvidhya.com/blog/2017/06/a-comprehensive-guide-for-linear-ridge-and-lasso-regression/
+
+
 ## Work distribution
 
 - Data Preparation            : Jie En                                                          
