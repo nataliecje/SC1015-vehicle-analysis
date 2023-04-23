@@ -16,6 +16,9 @@ Please view the notebooks in the following order:
 1) Data Preparation                                                                  
 2) Exploratory Data Analysis                                                             
 3) Machine Learning                                                                                  
+<br/>
+<br/>
+
 
 ## Data Preparation
 
