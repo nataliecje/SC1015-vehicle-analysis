@@ -71,17 +71,28 @@ Data scaling is the process of transforming the values of the features of a data
 As we have variables with data points far from each other, scaling is a technique to make them closer to each other or in simpler words, we can say that the scaling is used for making data points generalized so that the distance between them will be lower. Therefore, we have made a linear transformation of the data of some variables to map the minimum and maximum value to 1 and 100 respectively. This adjusts the numbers to make it easy to compare the values that are out of each other's scope, ultimately increasing the accuracy of the models.
 <br/> 
 <br/> 
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
 
 
 ## Exploratory Data Analysis
 
-In this section, we have decided to narrow our focus down to **<ins>3 predictor variables</ins>** `gender`, `age` and `traffic` and **<u>2 response variables**<u/> `claims` and `cost`. We have decided to go ahead with `gender`, `age` and `traffic index` as our predictor variables as these are variables that would likely influence the our 2 response variables. On the contrary, the other variables in the dataset that we have decided not to explore are already similar to our chosen variables. We will be taking a look at each predictor variable and response variable and subsequently **<u>explore the relationships between each possible pair of predictor and response variables.</u>**
+In this section, we have decided to narrow our focus down to **<ins>3 predictor variables</ins>** `gender`, `age` and `traffic` and **<u>2 response variables**<u/> `claims` and `cost`. We have decided to go ahead with `gender`, `age` and `traffic index` as our predictor variables as these are variables that would likely influence the our 2 response variables. On the contrary, the other variables in the dataset that we have decided not to explore are already similar to our chosen variables. We will be taking a look at each predictor variable and response variable and subsequently **<ins>explore the relationships between each possible pair of predictor and response variables.</ins>**
 
-<br> 
-<br>
+<br/> 
 Lastly, we will also be taking a look at the relationship between `numclaims` and `cost`.
 
-<br>
+<br/>
 ## Table of Contents 
 >1. Classifying dataset into numerical and categorical <br>
 >2. Exploring Predictor Variables <br>
