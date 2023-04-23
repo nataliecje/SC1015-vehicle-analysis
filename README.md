@@ -91,26 +91,26 @@ In this section, we have decided to narrow our focus down to **<ins>3 predictor 
 
 Lastly, we will also be taking a look at the relationship between `numclaims` and `cost`.
 
-<br>
-##Table of Contents 
->1. Classifying dataset into numerical and categorical <br>
->2. Exploring Predictor Variables <br>
->>2.1 `gender` (gender of individual) <br>
->>2.2 `age` (age category of individual) <br>
->>2.3 `traffic` (traffic index) <br>
+
+## Table of Contents <br/>
+>1. Classifying dataset into numerical and categorical <br/>
+>2. Exploring Predictor Variables <br/>
+>>2.1 `gender` (gender of individual) <br/>
+>>2.2 `age` (age category of individual) <br/>
+>>2.3 `traffic` (traffic index) <br/>
 >3. Exploring the Response Variables
->>3.1 `claims` (boolean variable indicating presence of an insurance claim) <br>
->>3.2 `cost` (cost of insurance claim when `claims` is present) <br>
->4. Exploring Relationship between predictor variables and `claims`
->>4.1 `gender` against `claims` <br>
->>4.2 `age` against `claims` <br>
->>4.3 `traffic` against `claims` <br>
->5. Exploring Relationship between predictor variables and `cost`
->>5.1 `gender` against `cost` <br>
->>5.2 `age` against `cost` <br>
->>5.3 `traffic` against `cost` <br>
->6. Exploring Relationship between `numclaims` and `cost`
-<br>
+>>3.1 `claims` (boolean variable indicating presence of an insurance claim) <br/>
+>>3.2 `cost` (cost of insurance claim when `claims` is present) <br/>
+>4. Exploring Relationship between predictor variables and `claims` <br/>
+>>4.1 `gender` against `claims` <br/>
+>>4.2 `age` against `claims` <br/>
+>>4.3 `traffic` against `claims` <br/>
+>5. Exploring Relationship between predictor variables and `cost` <br/>
+>>5.1 `gender` against `cost` <br/>
+>>5.2 `age` against `cost` <br/>
+>>5.3 `traffic` against `cost` <br/>
+>6. Exploring Relationship between `numclaims` and `cost` <br/>
+
 
 In order to analyse the variables we have picked, we first needed to manipulate the dataset. <br>
 Firstly, we extracted each predictor variable from its respective column in the dataset into a dataframe. <br> 
