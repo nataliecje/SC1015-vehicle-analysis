@@ -123,7 +123,7 @@ Firstly, we extracted each predictor variable from its respective column in the 
 Secondly, some rows in the ‘claim cost’ column had zero values which indicated the absence of a claim. We are are only interested in analysing the cost of claims when claims were present, so we manipulated the data by extracting out all the rows in the dataset that had a non-zero value into a new dataset. <br/>
 
 
-#1. Classifying the dataset into numerical and categorical# <br/>
+# 1. Classifying the dataset into numerical and categorical <br/>
 We have 3 categorical variables: <br/>
 1. `gender` (male and female) <br/>
 2. `age` (age category) <br/>
