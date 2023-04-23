@@ -111,9 +111,9 @@ Lastly, we will also be taking a look at the relationship between `numclaims` an
 >>5.3 `traffic` against `cost` <br/>
 >6. Exploring Relationship between `numclaims` and `cost` <br/>
 
-<br/>
-In order to analyse the variables we have picked, we first needed to manipulate the dataset. <br>
-Firstly, we extracted each predictor variable from its respective column in the dataset into a dataframe. <br> 
+
+In order to analyse the variables we have picked, we first needed to manipulate the dataset. <br/>
+Firstly, we extracted each predictor variable from its respective column in the dataset into a dataframe. <br/> 
 Secondly, some rows in the ‘claim cost’ column had zero values which indicated the absence of a claim. We are are only interested in analysing the cost of claims when claims were present, so we manipulated the data by extracting out all the rows in the dataset that had a non-zero value into a new dataset.
 
 <br/>
