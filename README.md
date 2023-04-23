@@ -116,7 +116,7 @@ Lastly, we will also be taking a look at the relationship between `numclaims` an
 >>5.2 `age` against `cost` <br/>
 >>5.3 `traffic` against `cost` <br/>
 >6. Exploring Relationship between `numclaims` and `cost` <br/>
-
+<br/>
 
 
 In order to analyse the variables we have picked, we first needed to manipulate the dataset. <br/>
@@ -125,45 +125,46 @@ Firstly, we extracted each predictor variable from its respective column in the 
 
 Secondly, some rows in the ‘claim cost’ column had zero values which indicated the absence of a claim. We are are only interested in analysing the cost of claims when claims were present, so we manipulated the data by extracting out all the rows in the dataset that had a non-zero value into a new dataset. <br/>
 
-
+<br/>
 ## 1. Classifying the dataset into numerical and categorical <br/>
 We have 3 categorical variables: <br/>
 1. `gender` (male and female) <br/>
 2. `age` (age category) <br/>
 3. `claims` (presence or absence of an insurance claim) <br/>
 
+<br/>
 We have 2 numerical variables: <br/>
 1. `traffic` (traffic index / traffic condition on the road) <br/>
 2. `cost` (cost of insurance claim) <br/>
 
 
-
+<br/>
 ## 2. Exploring Predictor Variables <br/>
 2.1 `gender` is a categorical variable with 2 values, male and female <br/>
 2.2 `age` is a categorical variable with 6 different values ranging from 1 to 6 <br/>
 2.3 `traffic` is a numerical variable ranging from 1 to 100 which represents the traffic conditions on the road. A higher traffic value represents higher traffic activity on the road <br/>
 
-
+<br/>
 ## 3. Exploring Response Variables <br/>
 3.1 `claims` is a categorical boolean variable with **Yes** and **No** values indicating the presence or absence of a claim <br/>
 3.2 `cost` is a numerical variable representing the cost of an insurance claim <br/>
  
-
+<br/>
 Now, we will be taking a look at the relationships between each predictor variable and response variable to find better insights. <br/>
 
-
+<br/>
 ## 4. Exploring Relationship between `predictor variables` and `claims` <br/>
 4.1 Plotting `claims` against `gender` allows us to see that females are more likely not to make claims while males are more likely to make claims <br/> 
 4.2 No insights were gathered here <br/>
 4.3 Plotting `claims` against `traffic` also allows us to see that claims are more likely to be made in areas with a higher traffic index. <br/>
 
-
+<br/>
 ## 5. Exploring Relationship between predictor variables and `cost` <br/>
 5.1 Plotting `gender` against `cost` tells us that the median and quartile claim costs for females are higher than that for males <br/>
 5.2 Plotting `cost` against `age` tells us that the youngest and oldest drivers’ have higher claim costs and a larger spread of claim costs than other drivers <br/>
 5.3 No new insights were gathered here <br/>
 
- 
+<br/>
 ## 6. Exploring Relationship between `numclaims` and `cost` <br/>
 Last but not least, plotting `cost` against `numclaims` (number of claims made) tells us that claim costs and number of claims are positively correlated. <br/>
  
