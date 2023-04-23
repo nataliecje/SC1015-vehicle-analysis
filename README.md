@@ -30,7 +30,7 @@ Please view the notebooks in the following order:
 
 **1. Dropping of Unused Variables**
 
-Variables dropped: pol_number, date_of_birth, claim_office, annual_premium
+Variables dropped: `pol_number`, `date_of_birth`, `claim_office`, `annual_premium`
 <br/> 
 
 These variables are not found useful in helping us to reach a solution for our problem statements. 
@@ -39,7 +39,7 @@ These variables are not found useful in helping us to reach a solution for our p
 
 **2. Derivation of New Variable**
 
-Variables derived: month, year, monthDiff, claims
+Variables derived: `month`, `year`, `monthDiff`, `claims`
 <br/> 
 
 month & year: derived from pol_eff_date; used for calculation of monthDiff
