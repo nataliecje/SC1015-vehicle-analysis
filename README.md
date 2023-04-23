@@ -87,9 +87,13 @@ As we have variables with data points far from each other, scaling is a techniqu
 
 ## Exploratory Data Analysis
 
-In this section, we have decided to narrow our focus down to **<ins>3 predictor variables</ins>** `gender`, `age` and `traffic` and **<u>2 response variables**<u/> `claims` and `cost`. We have decided to go ahead with `gender`, `age` and `traffic index` as our predictor variables as these are variables that would likely influence the our 2 response variables. On the contrary, the other variables in the dataset that we have decided not to explore are already similar to our chosen variables. We will be taking a look at each predictor variable and response variable and subsequently **<ins>explore the relationships between each possible pair of predictor and response variables.</ins>**
+In this section, we have decided to narrow our focus down to **<ins>3 predictor variables</ins>** `gender`, `age` and `traffic` and **<u>2 response variables**<u/> `claims` and `cost`. <br/>
 
-Lastly, we will also be taking a look at the relationship between `numclaims` and `cost`.
+We have decided to go ahead with `gender`, `age` and `traffic index` as our predictor variables as these are variables that would likely influence the our 2 response variables. On the contrary, the other variables in the dataset that we have decided not to explore are already similar to our chosen variables. <br/> 
+ 
+We will be taking a look at each predictor variable and response variable and subsequently **<ins>explore the relationships between each possible pair of predictor and response variables.</ins>** <br/>
+
+Lastly, we will also be taking a look at the relationship between `numclaims` and `cost`. <br/>
 
 
 ## Table of Contents <br/>
@@ -119,7 +123,7 @@ Firstly, we extracted each predictor variable from its respective column in the 
 Secondly, some rows in the ‘claim cost’ column had zero values which indicated the absence of a claim. We are are only interested in analysing the cost of claims when claims were present, so we manipulated the data by extracting out all the rows in the dataset that had a non-zero value into a new dataset. <br/>
 
 
-**1. Classifying the dataset into numerical and categorical** <br/>
+#1. Classifying the dataset into numerical and categorical# <br/>
 We have 3 categorical variables: <br/>
 1. `gender` (male and female) <br/>
 2. `age` (age category) <br/>
