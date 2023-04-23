@@ -113,19 +113,21 @@ Lastly, we will also be taking a look at the relationship between `numclaims` an
 
 
 In order to analyse the variables we have picked, we first needed to manipulate the dataset. <br/>
+
 Firstly, we extracted each predictor variable from its respective column in the dataset into a dataframe. <br/> 
-Secondly, some rows in the ‘claim cost’ column had zero values which indicated the absence of a claim. We are are only interested in analysing the cost of claims when claims were present, so we manipulated the data by extracting out all the rows in the dataset that had a non-zero value into a new dataset.
 
-<br/>
-**1. Classifying the dataset into numerical and categorical**
-We have 3 categorical variables:
-1. `gender` (male and female)
-2. `age` (age category)
-3. `claims` (presence or absence of an insurance claim)
+Secondly, some rows in the ‘claim cost’ column had zero values which indicated the absence of a claim. We are are only interested in analysing the cost of claims when claims were present, so we manipulated the data by extracting out all the rows in the dataset that had a non-zero value into a new dataset. <br/>
 
-We have 2 numerical variables:
-1. `traffic` (traffic index / traffic condition on the road)
-2. `cost` (cost of insurance claim)
+
+**1. Classifying the dataset into numerical and categorical** <br/>
+We have 3 categorical variables: <br/>
+1. `gender` (male and female) <br/>
+2. `age` (age category) <br/>
+3. `claims` (presence or absence of an insurance claim) <br/>
+
+We have 2 numerical variables: <br/>
+1. `traffic` (traffic index / traffic condition on the road) <br/>
+2. `cost` (cost of insurance claim) <br/>
 
 
 
