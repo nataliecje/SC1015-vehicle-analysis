@@ -73,9 +73,9 @@ As we have variables with data points far from each other, scaling is a techniqu
 <br/> 
 <br/>
 <br/>
-
-
-
+<br/>
+<br/>
+<br/>
 
 
 
@@ -95,7 +95,8 @@ We will be taking a look at each predictor variable and response variable and su
 
 Lastly, we will also be taking a look at the relationship between `numclaims` and `cost`. <br/>
 <br/>
- 
+<br/>
+
 
 
 ## Table of Contents <br/>
@@ -118,13 +119,15 @@ Lastly, we will also be taking a look at the relationship between `numclaims` an
 >6. Exploring Relationship between `numclaims` and `cost` <br/>
 <br/>
 
-
 In order to analyse the variables we have picked, we first needed to manipulate the dataset. <br/>
 
 Firstly, we extracted each predictor variable from its respective column in the dataset into a dataframe. <br/> 
 
 Secondly, some rows in the ‘claim cost’ column had zero values which indicated the absence of a claim. We are are only interested in analysing the cost of claims when claims were present, so we manipulated the data by extracting out all the rows in the dataset that had a non-zero value into a new dataset. <br/>
 <br/>
+<br/>
+
+
 
 
 ## 1. Classifying the dataset into numerical and categorical <br/>
@@ -152,7 +155,6 @@ We have 2 numerical variables: <br/>
 3.2 `cost` is a numerical variable representing the cost of an insurance claim <br/>
 <br/>
 
-
 Now, we will be taking a look at the relationships between each predictor variable and response variable to find better insights. <br/>
 <br/>
 
@@ -176,9 +178,9 @@ Last but not least, plotting `cost` against `numclaims` (number of claims made) 
 <br/>
 <br/>
 <br/>
-  
-
-  
+<br/>
+<br/>
+<br/> 
   
   
   
