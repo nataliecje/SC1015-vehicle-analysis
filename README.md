@@ -91,8 +91,8 @@ In this section, we have decided to narrow our focus down to **<ins>3 predictor 
 
 Lastly, we will also be taking a look at the relationship between `numclaims` and `cost`.
 
-<br/>
-## Table of Contents 
+<br>
+##Table of Contents 
 >1. Classifying dataset into numerical and categorical <br>
 >2. Exploring Predictor Variables <br>
 >>2.1 `gender` (gender of individual) <br>
@@ -110,7 +110,7 @@ Lastly, we will also be taking a look at the relationship between `numclaims` an
 >>5.2 `age` against `cost` <br>
 >>5.3 `traffic` against `cost` <br>
 >6. Exploring Relationship between `numclaims` and `cost`
-<br/>
+<br>
 
 In order to analyse the variables we have picked, we first needed to manipulate the dataset. <br>
 Firstly, we extracted each predictor variable from its respective column in the dataset into a dataframe. <br> 
